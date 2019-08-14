@@ -1,23 +1,24 @@
 import { Injectable } from '@angular/core';
 import { Course } from '../models/course';
-
+import { HttpHeaders, HttpClient } from '@angular/common/http'
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CourseService {
 
-  courses:Course[] = [
-    {code: "CS203", title: "Data Analsis"},
-    {code: "CS200", title: "Algorithm"},
-    {code: "CS200", title: "Algorithm"},
-    {code: "CS200", title: "Algorithm"},
-    {code: "CS200", title: "Algorithm"},
-            
-    
-  ]
+ baseurl = "http://127.0.0.1:8000";
+ httpHeaders = new HttpHeaders({'content-Type': 'application/json'});
+  constructor(private http: HttpClient) { }
+  ngOnInit() {
+  }
+  getAllCourses(): Observable<any> {
+    return this.http.get(this.baseurl + '/courses/', {headers: this.httpHeaders});
+  }
 
 
 
-  constructor() { }
+  
 }

@@ -1,5 +1,8 @@
 export class Course {
 
-    code:string;
-    title:string;
+        name: string;
+        code: string;
+        building: number;
+        room: number;
+        teacher: string;
 }

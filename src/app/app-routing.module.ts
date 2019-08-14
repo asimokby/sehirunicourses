@@ -10,7 +10,7 @@ const routes: Routes = [
   {path: '', redirectTo: '/courses', pathMatch: 'full'},
   {path:'courses', component:CoursesComponent},
   {path:'about', component: AboutComponent},
-  {path:'courses/:code', component: CourseComponent}
+  {path:'courses/:id', component: CourseComponent}
 
 
 ];
