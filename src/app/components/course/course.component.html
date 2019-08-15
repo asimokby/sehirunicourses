@@ -1,13 +1,26 @@
-<!-- <div class = "card">
-
-    <div class = "title">
-      <a href = "">{{course.title}}</a>
-    </div>
+<mat-card class="card">
+    <mat-card-header>
+      <!-- <div mat-card-avatar class="example-header-image"></div> -->
+      <mat-card-title> <span class="codeInCard">{{course.code}}:</span> {{course.name}} </mat-card-title>
+      <mat-card-subtitle><span class="codeInCard">Prof.</span> {{course.teacher}}</mat-card-subtitle>
+    </mat-card-header>
+    <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+    <mat-card-content class="cardContent">
+      <p>
+       Check the Syllabus to get more information about the course. 
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button class="button">Download Syllabus</button>
+    </mat-card-actions>
+  </mat-card>
   
-    <div class = "code">
-      <b>{{course.code}}</b>
-    </div>
-  
-  </div> -->
 
-  <b>code: {{ code }}</b>
+<mat-tab-group>
+    <mat-tab label="Exams">
+      <b>ome tab content</b>
+    </mat-tab>
+    <mat-tab label="Notes">
+      <b>Some more tab content</b>
+    </mat-tab>
+  </mat-tab-group>

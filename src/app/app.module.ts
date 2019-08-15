@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http' 
 import { AppRoutingModule } from './app-routing.module';
+import { MatTabsModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
 import { AppComponent } from './app.component';
 import { CoursesComponent } from './components/courses/courses.component';
 import { CourseComponent } from './components/course/course.component';
@@ -16,13 +19,18 @@ import { AboutComponent } from './about/about.component';
     CoursesComponent,
     CourseComponent,
     HeaderComponent,
-    AboutComponent
+    AboutComponent,
+   
+
   ],
 
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    MatTabsModule,
+    BrowserAnimationsModule,
+    MatCardModule,
     
 
   ],

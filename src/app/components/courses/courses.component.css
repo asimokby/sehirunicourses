@@ -1,50 +1,15 @@
-
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-
-    width: 250px;
-    height: 250px;
-    text-align: center;
-    background-color: white;
-    text-shadow: 0 1px 0 rgba(255,255,255,.5);
-    margin-bottom: 20px;
-    margin-right: 15px;
-    border-radius: 5px;
-    float: left;
-  }
-
 .title {
-
-    /* color: whitesmoke; */
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 40px;
     color: #4CAF50;
+    text-align: left;
+  }
+
+  .card {
+    max-width: 600px;
+    margin-bottom: 5px;
   }
 
 
 
-.code {
-    color: whitesmoke;
-    font-size: 22px;
-    margin: 20px;
-    background: black;
-    
-  }
-
-.button {
-background-color: #4CAF50; /* Green */
-border: none;
-color: white;
-padding: 15px 32px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
-}
-
-.button:hover {
-background-color: black; /* Green */
-color: white;
-}
 

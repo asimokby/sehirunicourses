@@ -17,8 +17,9 @@ export class CourseService {
   getAllCourses(): Observable<any> {
     return this.http.get(this.baseurl + '/courses/', {headers: this.httpHeaders});
   }
-
-
-
   
+  getCourseById(id: string): Observable<any> {
+    return this.http.get(this.baseurl + '/courses/' + id + '/', {headers:this.httpHeaders})
+  }
+
 }

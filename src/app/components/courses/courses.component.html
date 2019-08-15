@@ -1,15 +1,14 @@
-<!-- {{courses[0].name}} -->
-<!-- {{courses[0]}} -->
+  <mat-card class="card" *ngFor="let course of courses">
+      <mat-card-header>
+        <mat-card-title calss ="title"> <span class="codeInCard">{{course.code}}:</span> {{course.name}} </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <b>View Course Details to Access course materials: <span class="codeInCard">Exams, Homeworks, Notes..etc</span></b>
+      </mat-card-content>
+      <mat-card-actions>
+          <button class="button" (click)="btnClick(course.id)">Course Details</button>
+      </mat-card-actions>
+    </mat-card>
+    
 
-<div *ngFor = "let course of courses" class = "card" >
-    <div class = "title">
-        <b>{{course.name}}</b>
-    </div>
-  
-    <div class = "code">
-      <b>{{course.code}}</b>
-    </div>
-    <button class="button" (click)="btnClick(course.id)">Course Details</button>
-  </div> 
-
-<a href="../../../assets/CV.pdf">Get Link</a>
+<!-- <a href="../../../assets/CV.pdf">Get Link</a> -->

@@ -1,19 +1,15 @@
-/* .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 20px;
-    text-align: center;
-    background-color: blue;
-  }
+/* div.data {
+  position:absolute;
+  top:0;
+  bottom:0;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+  height:150px;
+} */
 
-.title {
+.card {
+  max-width: 400px;
+  border: inset;
+}
 
-    color: black;
-    font-size: 30px;
-    margin: 50px;
-  }
 
-.code {
-    color: black;
-    font-size: 30px;
-    margin: 50px;
-  } */
