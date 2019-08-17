@@ -1,0 +1,18 @@
+.about-contact b {
+    display: flex;
+    float: left;
+    margin-right:50px;
+    font-size: 18px;
+  }
+  .about-contact img{
+    margin-right: 5px;   
+    width:20px;
+    height:20px;
+  }
+  .about-contact a{
+    text-decoration: none;
+  }
+  
+  .about-contact b:before {
+    padding-right: 10px;
+  }

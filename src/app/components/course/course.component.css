@@ -1,15 +1,4 @@
-/* div.data {
-  position:absolute;
-  top:0;
-  bottom:0;
-  margin: auto;
-  background: rgba(0, 0, 0, 0.5);
-  height:150px;
-} */
-
 .card {
   max-width: 400px;
-  border: inset;
 }
-
 

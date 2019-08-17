@@ -1,0 +1,14 @@
+ <div id="table-scroll">
+    <table id="customers">
+      <thead>
+          <th>assignments</th> 
+      </thead>
+      <tbody>
+        <tr *ngFor="let assignment of assignments">
+            <td >
+                <a href="{{assignment.assignment_file_q}}">{{assignment.assignment_title}}</a>
+            </td>
+          </tr>
+      </tbody>
+      </table>
+    </div>

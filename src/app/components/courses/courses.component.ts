@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { CourseService } from '../../services/course.service';
-import { Course } from '../../models/course';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,32 +9,33 @@ import { Router } from '@angular/router';
 })
 export class CoursesComponent implements OnInit {
 
-  // courses =
-  // [
-  //       {id: 1
-  //       ,name: "Algorithms",
-  //       code: "CS200",
-  //       building: 1,
-  //       room: 4013,
-  //       teacher: "Baysan"}
-
-  // ];
-  courses;
+  courses:any = [];
   constructor(private courseService: CourseService, private router: Router) { }
 
   ngOnInit() {
     this.getCourses();
-    console.log(this.courses)
-    // this.courseService.getAllCourses().subscribe(error => console.log(error))
   }
 
   getCourses(){
-    this.courses = this.courseService.getAllCourses().subscribe(data => {this.courses = data;});
+    this.courseService.getAllCourses().subscribe(data => this.courses = data);
 
   }
  
   btnClick(id:string){
     this.router.navigate(['/courses/'+ id])
   }
+
+  checkInputName(searchText: string, courseName: string){
+    if (courseName.toLowerCase().includes(searchText.toLowerCase())){
+      return true;
+    }
+  }
+
+  checkInputCode(searchText: string, courseCode: string){
+    if (courseCode.toLowerCase().includes(searchText.toLowerCase())){
+      return true;
+    }
+  }
+
 
 }

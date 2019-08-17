@@ -1,4 +1,18 @@
-  <mat-card class="card" *ngFor="let course of courses">
+ 
+ 
+<!-- <app-search-course></app-search-course> -->
+
+ <div class="button_box2"> 
+    <form class="form-wrapper-2 cf">
+    <input type="text" [(ngModel)]="searchText" placeholder="Search by name or code..." name="name">
+    <button type="submit">Search</button>
+    </form>
+    </div>
+<b style="color: #4CAF50">Courses: <span style="color:black">{{courses.length}}</span></b>
+<div id="table-scroll">
+<div *ngFor="let course of courses">
+<div *ngIf="searchText == null || checkInputName(searchText, course.name) || checkInputCode(searchText, course.code)">
+ <mat-card class="card" >
       <mat-card-header>
         <mat-card-title calss ="title"> <span class="codeInCard">{{course.code}}:</span> {{course.name}} </mat-card-title>
       </mat-card-header>
@@ -8,7 +22,8 @@
       <mat-card-actions>
           <button class="button" (click)="btnClick(course.id)">Course Details</button>
       </mat-card-actions>
-    </mat-card>
-    
 
-<!-- <a href="../../../assets/CV.pdf">Get Link</a> -->
+    </mat-card>
+  </div>
+</div>
+</div>

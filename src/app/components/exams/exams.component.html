@@ -1,0 +1,14 @@
+<div id="table-scroll">
+<table id="customers">
+  <thead>
+      <th>Exams</th> 
+  </thead>
+  <tbody>
+    <tr *ngFor="let exam of exams">
+        <td >
+          <a href="{{exam.exam_file_q}}">{{exam.exam_title}}</a>
+        </td>
+      </tr>
+  </tbody>
+  </table>
+</div>

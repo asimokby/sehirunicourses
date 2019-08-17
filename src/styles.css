@@ -1,24 +1,102 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-bottom: 0%;
-    }
-    
-    .button:hover {
-    background-color: black; /* Green */
-    color: white;
-    }
 
-    .codeInCard {
-        color: #4CAF50;
-      }
-      
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 1000px) {
+  .card {
+    float:none !important;
+    max-width: 350px !important;
+  }
+    html, body {
+      overflow-x:hidden;
+      width:100%;
+     /* You may also want to try adding:*/
+      margin: 0;
+      padding: 0;
+  }
+
+  .form-wrapper-2 {
+    width: 355px !important;
+  }
+  .form-wrapper-2 input {
+    width: 235px !important;
+  }
+}
+
+.button {
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 10px 25px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin-bottom: 0%;
+}
+
+.button:hover {
+background-color: black; /* Green */
+color: white;
+}
+
+.codeInCard {
+    color: #4CAF50;
+  }
+  
+  #customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    overflow:scroll;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  
+
+  }
+  
+  #customers a{
+      color: black;
+      font: bold 200 15px/1.5 Helvetica, Verdana, sans-serif; 
+
+  }
+  #customers tr:nth-child(even){
+        background-color: #f2f2f2;
+        
+    }
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  #table-scroll {
+    height:300px;
+    overflow:auto;  
+    margin-top:20px;
+    width:500px;
+  }
+
+  .about-contact p {
+    border-bottom: 2px solid #4CAF50; 
+    font: 200 20px/1.5 Helvetica, Verdana, sans-serif; 
+    margin-left: 20px;
+    padding:20px;
+    text-align: center;
+}
+
+.about-contact b{
+    border-left: 5px solid #4CAF50; 
+    margin-left: 20px;
+    padding:3px;
+    
+}

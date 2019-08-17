@@ -1,0 +1,15 @@
+<div id="table-scroll">
+    <table id="customers">
+      <thead>
+          <th>Quizes</th> 
+      </thead>
+      <tbody>
+        <tr *ngFor="let quiz of quizes">
+            <td >
+                <a href="{{quiz.quiz_file_q}}">{{quiz.quiz_title}}</a>
+            </td>
+          </tr>
+      </tbody>
+      </table>
+    </div>
+    

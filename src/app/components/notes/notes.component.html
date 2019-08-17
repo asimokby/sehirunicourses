@@ -1,0 +1,14 @@
+<div id="table-scroll">
+<table id="customers">
+  <thead>
+      <th>Practise</th> 
+  </thead>
+  <tbody>
+    <tr *ngFor="let note of notes">
+        <td >
+            <a href="{{note.note_file}}">{{note.note_title}}</a>
+        </td>
+      </tr>
+  </tbody>
+  </table>
+</div>

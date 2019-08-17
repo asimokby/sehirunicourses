@@ -1,10 +1,8 @@
 <mat-card class="card">
     <mat-card-header>
-      <!-- <div mat-card-avatar class="example-header-image"></div> -->
       <mat-card-title> <span class="codeInCard">{{course.code}}:</span> {{course.name}} </mat-card-title>
       <mat-card-subtitle><span class="codeInCard">Prof.</span> {{course.teacher}}</mat-card-subtitle>
     </mat-card-header>
-    <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
     <mat-card-content class="cardContent">
       <p>
        Check the Syllabus to get more information about the course. 
@@ -16,11 +14,20 @@
   </mat-card>
   
 
-<mat-tab-group>
-    <mat-tab label="Exams">
-      <b>ome tab content</b>
+<mat-tab-group mat-align-tabs="center">
+    <mat-tab label="Exams: {{exams.length}}">
+      <app-exams [exams]='exams'></app-exams>
     </mat-tab>
-    <mat-tab label="Notes">
-      <b>Some more tab content</b>
+    <mat-tab label="Notes: {{notes.length}}">
+      <app-notes [notes] = 'notes'></app-notes>
+    </mat-tab>
+    <mat-tab label="Assignments: {{assignments.length}}">
+        <app-assignments [assignments] = 'assignments'></app-assignments>
+    </mat-tab>
+    <mat-tab label="Quizes: {{quizes.length}}">
+        <app-quizes [quizes] = 'quizes'></app-quizes>
+    </mat-tab>
+    <mat-tab label="Practise : {{practises.length}}">
+        <app-practises [practises] = 'practises'></app-practises>
     </mat-tab>
   </mat-tab-group>
