@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 export class CoursesComponent implements OnInit {
 
   courses:any = [];
+  searchText;
   constructor(private courseService: CourseService, private router: Router) { }
 
   ngOnInit() {
