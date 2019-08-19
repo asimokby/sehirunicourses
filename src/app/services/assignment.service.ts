@@ -6,7 +6,8 @@ import { Observable } from 'rxjs';
 })
 export class AssignmentService {
 
-  baseurl = "http://127.0.0.1:8000";
+  // baseurl = "http://127.0.0.1:8000";
+  baseurl = "http://fakesehir.tk/api";
   httpHeaders = new HttpHeaders({'content-Type': 'application/json'});
    constructor(private http: HttpClient) { }
    ngOnInit() {

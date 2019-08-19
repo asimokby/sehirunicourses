@@ -7,8 +7,9 @@ import { Observable } from 'rxjs';
 })
 export class CourseService {
 
-  baseurl = "http://167.71.57.142:8000";
-//  baseurl = "https://sehirunicourses.herokuapp.com";
+  // baseurl = "http://167.71.57.142:8000";
+ baseurl = "http://fakesehir.tk/api";
+//  baseurl = "http://127.0.0.1:8000";
  httpHeaders = new HttpHeaders({'content-Type': 'application/json'});
   constructor(private http: HttpClient) { }
   ngOnInit() {

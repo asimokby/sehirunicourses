@@ -52,7 +52,7 @@ export class CourseComponent implements OnInit {
   }
 
   getAssignments(){
-    this.assignmentService.getAssignmentsByCourseId(this.id).subscribe(data => this.assignments = data);
+    this.assignmentService.getAssignmentsByCourseId(this.id).subscribe( data => this.assignments = data);
   }
 
   getQuizes(){
