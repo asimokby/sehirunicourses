@@ -17,13 +17,19 @@
         <mat-card-title calss ="title"> <span class="codeInCard">{{course.code}}:</span> {{course.name}} </mat-card-title>
       </mat-card-header>
       <mat-card-content>
-        <b>View Course Details to Access course materials: <span class="codeInCard">Exams, Homeworks, Notes..etc</span></b>
+          <!-- <button class="button" (click)="btnClick(course.id)">Course Details</button> -->
+        <b><span style=" color:#4CAF50">Prof. </span>{{course.teacher}}</b>
+        <!-- <b>View Course Details to Access course materials: <span class="codeInCard">Exams, Homeworks, Notes..etc</span></b> -->
       </mat-card-content>
       <mat-card-actions>
-          <button class="button" (click)="btnClick(course.id)">Course Details</button>
+          <button style="float: left" class="button" (click)="btnClick(course.id)">Course Details</button>
+          <!-- <button class="button" (click)="btnClick(course.id)">Course Details</button> -->
+
       </mat-card-actions>
 
     </mat-card>
   </div>
 </div>
 </div>
+
+

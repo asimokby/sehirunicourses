@@ -5,8 +5,16 @@
   </thead>
   <tbody>
     <tr *ngFor="let exam of exams">
-        <td >
-          <a href="{{exam.exam_file_q}}">{{exam.exam_title}}</a>
+        <td>
+
+          <div id="parent">
+            <b>{{exam.exam_title}}</b>
+            <div id="rightchild">
+              <button  class = "view-downloadButton" (click)="viewBtn(exam.exam_file_q, exam.exam_title)">View</button>
+              <button class = "view-downloadButton" (click)="downloadBtn(exam.exam_file_q)">Download</button>
+            </div>
+          </div>
+          
         </td>
       </tr>
   </tbody>

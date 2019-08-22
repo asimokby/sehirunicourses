@@ -6,7 +6,13 @@
   <tbody>
     <tr *ngFor="let note of notes">
         <td >
-            <a href="{{note.note_file}}">{{note.note_title}}</a>
+            <div id="parent">
+                <b>{{note.note_title}}</b>
+                <div id="rightchild">
+                  <button  class = "view-downloadButton" (click)="viewBtn(note.note_file, note.note_title)">View</button>
+                  <button class = "view-downloadButton" (click)="downloadBtn(note.note_file)">Download</button>
+                </div>
+              </div>
         </td>
       </tr>
   </tbody>

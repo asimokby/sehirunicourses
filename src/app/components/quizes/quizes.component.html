@@ -5,8 +5,14 @@
       </thead>
       <tbody>
         <tr *ngFor="let quiz of quizes">
-            <td >
-                <a href="{{quiz.quiz_file_q}}">{{quiz.quiz_title}}</a>
+          <td >
+            <div id="parent">
+              <b>{{quiz.quiz_title}}</b>
+              <div id="rightchild">
+                <button  class = "view-downloadButton" (click)="viewBtn(quiz.quiz_file_q, quiz.quiz_title)">View</button>
+                <button class = "view-downloadButton" (click)="downloadBtn(quiz.quiz_file_q)">Download</button>
+              </div>
+            </div>
             </td>
           </tr>
       </tbody>

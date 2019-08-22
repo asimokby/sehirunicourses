@@ -24,6 +24,7 @@ export class CoursesComponent implements OnInit {
  
   btnClick(id:string){
     this.router.navigate(['/courses/'+ id])
+    
   }
 
   checkInputName(searchText: string, courseName: string){

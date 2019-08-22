@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import {FormsModule} from "@angular/forms"; 
 import { CommonModule } from '@angular/common';  
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 import { AppComponent } from './app.component';
 import { CoursesComponent } from './components/courses/courses.component';
@@ -19,6 +20,7 @@ import { AssignmentsComponent } from './components/assignments/assignments.compo
 import { QuizesComponent } from './components/quizes/quizes.component';
 import { PractisesComponent } from './components/practises/practises.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ViewPdfComponent } from './components/view-pdf/view-pdf.component';
 
 
 
@@ -35,6 +37,7 @@ import { ContactComponent } from './components/contact/contact.component';
     QuizesComponent,
     PractisesComponent,
     ContactComponent,
+    ViewPdfComponent,
     
     
 
@@ -51,6 +54,7 @@ import { ContactComponent } from './components/contact/contact.component';
     MatCardModule,
     FormsModule,
     CommonModule,
+    PdfViewerModule,
     
 
   ],

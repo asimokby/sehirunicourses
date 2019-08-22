@@ -6,7 +6,15 @@
       <tbody>
         <tr *ngFor="let assignment of assignments">
             <td >
-                <a href="{{assignment.assignment_file_q}}">{{assignment.assignment_title}}</a>
+              
+                <div id="parent">
+                    <b>{{assignment.assignment_title}}</b>
+                    <div id="rightchild">
+                      <button  class = "view-downloadButton" (click)="viewBtn(assignment.assignment_file_q, assignment.assignment_title)">View</button>
+                      <button class = "view-downloadButton" (click)="downloadBtn(assignment.assignment_file_q)">Download</button>
+                    </div>
+                  </div>
+
             </td>
           </tr>
       </tbody>

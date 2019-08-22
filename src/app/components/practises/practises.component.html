@@ -6,7 +6,13 @@
       <tbody>
         <tr *ngFor="let practise of practises">
             <td >
-                <a href="{{practise.practise_file}}">{{practise.practise_title </a>
+                  <div id="parent">
+                      <b>{{practise.practise_title}}</b>
+                      <div id="rightchild">
+                        <button  class = "view-downloadButton" (click)="viewBtn(practise.practise_file, practise.practise_title)">View</button>
+                        <button class = "view-downloadButton" (click)="downloadBtn(practise.practise_file)">Download</button>
+                      </div>
+                    </div>
             </td>
           </tr>
       </tbody>
