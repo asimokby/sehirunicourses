@@ -58,7 +58,7 @@ color: white;
   }
   
   #customers {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    /* font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; */
     border-collapse: collapse;
     width: 100%;
     overflow:scroll;
@@ -72,7 +72,7 @@ color: white;
   #customers b {
     color: black;
     margin-right: 20px;
-    font: bold 200 15px/1.5 Helvetica, Verdana, sans-serif; 
+    /* font: bold 200 15px/1.5 Helvetica, Verdana, sans-serif;  */
   }
   
   
@@ -100,7 +100,7 @@ color: white;
 
   .about-contact p {
     border-bottom: 2px solid #4CAF50; 
-    font: 200 20px/1.5 Helvetica, Verdana, sans-serif; 
+    /* font: 200 20px/1.5 Helvetica, Verdana, sans-serif;  */
     margin-left: 20px;
     padding:20px;
     text-align: center;

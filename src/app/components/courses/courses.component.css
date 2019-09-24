@@ -54,19 +54,19 @@
     .form-wrapper-2 input::-webkit-input-placeholder {
       opacity:.4;
       color: #333;
-      font-weight: normal;
+      /* font-weight: normal; */
       font-style: italic;
     }
     .form-wrapper-2 input:-moz-placeholder {
       opacity:.4;
       color: #333;
-      font-weight: normal;
+      /* font-weight: normal; */
       font-style: italic;
     }
     .form-wrapper-2 input:-ms-input-placeholder {
       opacity:.4;
       color: #333;
-      font-weight: normal;
+      /* font-weight: normal; */
       font-style: italic;
     }
     .form-wrapper-2 button {
@@ -79,7 +79,7 @@
     cursor: not-allowed;
     height: 40px;
     width: 110px;
-    font: bold 15px/40px 'Raleway', sans-serif;
+    /* font: bold 15px/40px 'Raleway', sans-serif; */
     color: #fff;
     text-transform: uppercase;
     background: #4CAF50;
