@@ -18,7 +18,6 @@ export class AssignmentsComponent implements OnInit {
   }
     viewBtn(fileUrl:string, title:string){
       let url = '/file/'+title+ "?fileUrl="+ fileUrl;
-      console.log(url);
       window.open(url, '_blank');
       // this.router.navigate(['/file/'+title], { queryParams: { fileUrl: fileUrl} });
     }
