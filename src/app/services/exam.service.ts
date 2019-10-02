@@ -6,10 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ExamService {
-
-  // baseurl = "http://167.71.57.142:8000";
-  // baseurl = "http://127.0.0.1:8000";
-  // baseurl = "http://fakesehir.tk/api";
+  
   baseurl = "https://sehirunicourses.herokuapp.com";
   httpHeaders = new HttpHeaders({'content-Type': 'application/json'});
    constructor(private http: HttpClient) { }
